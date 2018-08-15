@@ -1,0 +1,400 @@
+﻿<!doctype html>
+<html>
+<head>
+
+<link rel="icon" href="images/logo.bmp"/>
+<title>iTrans</title>
+
+<script src="jscript/jquery-1.9.1.min.js"> 
+</script>
+<script src="bootstrap-4.0.0-alpha.6-dist/js/bootstrap.min.js"></script>
+
+<link rel="stylesheet" href="css/stylesheet.css"/>
+ <link rel="stylesheet" href="bootstrap-4.0.0-alpha.6-dist/css/bootstrap.min.css" />
+ <link rel="stylesheet" href="css/PopUp.css"/>
+
+
+</head>
+
+<body style="width:inherit;background-image:url(images/background.jpg);width:100%;height:100%);background-attachment:fixed;background-repeat:no-repeat" >
+
+<div id="wholebody" >
+
+<div id="header" >
+<!--<img src="images/rada kenya.png" /> -->
+
+<div id="container">
+<img src="images/logo2.png"id="logo"/>
+
+<b style="font-size:13px;position:absolute;margin-top:106px;float:left ">Book a bus with us</b>
+<div id="main_menu">
+
+          
+ <nav class= "navbar navbar-toggleable-md navbar-inverse" >
+<button class= "navbar-toggler navbar-toggler-right" type= "button" data-toggle= "collapse" data-target= "#navbarSupportedContent" aria-controls= "navbarSupportedContent" aria-expanded= "false" aria-label= "Toggle navigation" >
+<span class= "navbar-toggler-icon" ></span>
+</button>
+
+<div class= "collapse navbar-collapse" id= "navbarSupportedContent" >
+<ul class= "navbar-nav mr-auto " >
+<li class= "nav-item " >
+<a class= "nav-link" href= "index.html" > Home </a>
+</li>
+<li class= "nav-item" >
+<a class= "nav-link" href="ourpartners.html">Our Partners</a>
+</li>
+<li class= "nav-item" >
+<a class= "nav-link " href="aboutus.html">About Us </a>
+</li>
+<li class= "nav-item" >
+<a class= "nav-link " href="contactus.html">Contacts Us </a>
+</li>
+<li class= "nav-item active" >
+<a class= "nav-link " href = "login.html" >Login</a> <span class= "sr-only" > (current) </span></a>
+</li>
+
+</ul>
+</div>
+</nav>
+	
+        
+</div>
+</div>
+</div>
+
+
+
+	<div id="body" >
+    <div class="container">
+    <h6 class="text-center">Please Login</h6>
+    <a  href="#popup1">
+    <div class="row" id="partners_row" >
+<div class="col-md-3" >
+<img src="images/male-user-profile-picture_318-37825.jpg" class="img-thumbnail" id="partners_image"/> 
+
+</div>
+<div class="col-md-6" >
+
+<div class="row" id="partners_sacco">Login As Customer</div>
+
+
+</div>
+</div>
+</a>
+
+     <a  href="#popup2">
+        <div class="row" id="partners_row" >
+<div class="col-md-3" >
+<img src="images/bus-front_318-33490.jpg" class="img-thumbnail" id="partners_image"/> 
+
+</div>
+<div class="col-md-6" >
+
+<div class="row" id="partners_sacco">Login as Company</div>
+
+
+</div>
+</div>
+     </a>
+</div>
+
+
+    
+    <div id="popup1" class="overlay">
+	<div class="popup">
+    <h6 class="text-center">Login as customer</h6>
+    <a class="close" href="#">&times;</a>
+		<div class="content">
+
+<div class="login_forms" >
+    
+    
+    <form class="form-horizontal" role="form" method="post" action="php/LogInCustomer.php">
+<div class="form-group">
+<label for="firstname" class="col-sm-2 control-label">User Name</label>
+<div class="col-sm-10">
+<input type="text" class="form-control" id="firstname" name="username"
+placeholder="Enter User Name">
+</div>
+</div>
+<div class="form-group">
+<label for="password" class="col-sm-2 control-label">Password</label>
+<div class="col-sm-10">
+<input type="password" class="form-control" id="password" name="password"
+placeholder="Enter password">
+</div>
+</div>
+
+<div class="form-group">
+<div class="col-sm-offset-2 col-sm-10">
+<button type="submit" class="btn btn-success">Log in</button>
+<span style="float:right"><span class="text-danger"> Dont have an account?</span><span class="btn-link"><a href="#popup3">Sign up</a></span></span>
+</div>
+</div>
+</form>
+    </div>
+</div>
+</div>
+</div>
+    
+	 <div id="popup2" class="overlay">
+	<div class="popup">
+    <h6 class="text-center">Login as Bus Company</h6>
+    <a class="close" href="#">&times;</a>
+		<div class="content">
+
+<div class="login_forms" >
+    
+    
+   <form class="form-horizontal" role="form" method="post" action="php/LogInCompany.php">
+<div class="form-group">
+<label for="firstname" class="col-sm-2 control-label">User Name</label>
+<div class="col-sm-10">
+<input type="text" class="form-control" id="firstname" name="username"
+placeholder="Enter User Name">
+</div>
+</div>
+<div class="form-group">
+<label for="password" class="col-sm-2 control-label">Password</label>
+<div class="col-sm-10">
+<input type="password" class="form-control" id="password" name="password"
+placeholder="Enter password">
+</div>
+</div>
+
+<div class="form-group">
+<div class="col-sm-offset-2 col-sm-10">
+<button type="submit" class="btn btn-success">Log in</button>
+<span style="float:right"><span class="text-danger"> Dont have an account?</span><span class="btn-link"><a href="#popup4">Sign up</a></span></span>
+</div>
+</div>
+</form>
+    </div>
+</div>
+</div>
+</div> 
+
+
+<div id="popup3" class="overlay">
+	<div class="popup">
+    <h6 class="text-center">Sign in Customer</h6>
+    <a class="close" href="#">&times;</a>
+		<div class="content">
+
+<div class="login_forms" >
+    
+    
+    <form class="form-horizontal" role="form" action="php/SignUpCustomer.php" method="post">
+<div class="form-group">
+<label for="email" class="col-sm-2 control-label">Email</label>
+<div class="col-sm-10">
+<input type="email" class="form-control" id="email" name="email"
+placeholder="Enter Email">
+</div>
+</div>
+<div class="form-group">
+<label for="phonenumber" class="col-sm-2 control-label">Phonenumber</label>
+<div class="col-sm-10">
+<input type="tel" class="form-control" id="customerphone" name="phonenumber"
+placeholder="Enter phonenumber" onChange="validatephonecustomer()">
+</div>
+<span class="confirmation" ></span>
+</div>
+<div class="form-group">
+<label for="username" class="col-sm-2 control-label">User Name</label>
+<div class="col-sm-10">
+<input type="text" class="form-control" id="username" name="username"
+placeholder="Enter User Name">
+</div>
+</div>
+<div class="form-group">
+<label for="password" class="col-sm-2 control-label">Password</label>
+<div class="col-sm-10">
+<input type="password" class="form-control" id="password" name="password"
+placeholder="Enter password">
+</div>
+</div>
+<div class="form-group">
+<label for="password" class="col-sm-4 control-label">Confirm password</label>
+<div class="col-sm-8">
+<input type="password" class="form-control" id="password2" name="password2"
+placeholder="Enter password">
+</div>
+</div>
+<div class="form-group">
+<div class="col-sm-offset-2 col-sm-10">
+<button type="submit" class="btn btn-success">Sign in</button>
+</div>
+</div>
+</form>
+    </div>
+</div>
+</div>
+</div>
+
+
+<div id="popup4" class="overlay">
+	<div class="popup">
+    <h6 class="text-center">Sign up your Bus Company</h6>
+    <a class="close" href="#">&times;</a>
+		<div class="content">
+
+<div class="login_forms" >
+    
+    
+    <form class="form-horizontal" role="form" method="post" action="php/SignUpCompany.php">
+<div class="form-group">
+<label for="firstname" class="col-sm-2 control-label">Email</label>
+<div class="col-sm-10">
+<input type="email" class="form-control" id="firstname" name="email"
+placeholder="Enter Email">
+</div>
+</div>
+<div class="form-group">
+<label for="firstname" class="col-sm-2 control-label">Phonenumber</label>
+<div class="col-sm-10">
+<input type="tel" class="form-control" id="companyphone" name="phonenumber"
+placeholder="Enter Phone number" onChange="validatephonecompany()">
+</div>
+<span class="confirmation" ></span>
+</div>
+
+<div class="form-group">
+<label for="firstname" class="col-sm-2 control-label">User Name</label>
+<div class="col-sm-10">
+<input type="text" class="form-control" id="firstname" name="username"
+placeholder="Enter User Name">
+</div>
+</div>
+<div class="form-group">
+<label for="password" class="col-sm-2 control-label">Password</label>
+<div class="col-sm-10">
+<input type="password" class="form-control" id="password" name="password"
+placeholder="Enter password">
+</div>
+</div>
+<div class="form-group">
+<label for="password" class="col-sm-4 control-label">Confirm password</label>
+<div class="col-sm-8">
+<input type="password" class="form-control" id="password" name="password2"
+placeholder="Enter password">
+</div>
+</div>
+<div class="form-group">
+<div class="col-sm-offset-2 col-sm-10">
+<button type="submit" class="btn btn-success">Sign in</button>
+</div>
+</div>
+</form>
+    </div>
+</div>
+</div>
+</div>
+
+</div>
+</div>
+
+
+	<div id="footer">
+    <div class="container">
+<div class="row">
+<div class="col-sm-3">
+<b>About us</b><br/>
+  	 <p> The website was designed by</p>
+ 	     James Ikubi<br/>
+  		 Amos Korir<br/>
+  		 Stanley Kogi<br/>
+</div>
+<div class="col-sm-3"><b>Browse</b></div>
+<div class="col-sm-3"><b>Connect with us</b><br/>
+   	 <section id="div">
+		<a href="#"> <img id="img" src="images/socialsites/facebook_icon.png"/> </a>
+	</section>
+    
+    <section id="div">
+		<a href="#"> <img id="img" src="images/socialsites/pinterest_icon.png"/> </a>
+	</section>
+  
+     <section id="div">
+		<a href="#"> <img id="img" src="images/socialsites/dribbble_icon.png"/> </a>
+	</section><br/>
+
+    <section id="div">
+		<a href="#"> <img id="img" src="images/socialsites/skype_icon.png"/> </a>
+	</section>
+    <section id="div">
+		<a href="#"> <img id="img" src="images/socialsites/linkedin_icon.png"/> </a>
+	</section>  
+     <section id="div">
+		<a href="#"> <img id="" src="images/socialsites/twitter.png" width="45px" height="45px" style="padding-left:5px;margin-top:3px"/> </a>
+	</section>
+ </div>
+ 
+<div class="col-3-sm"><b>Contacts</b></div>
+
+</div>
+
+<img src="images/strip.png" style="width:100%;height:2px; background-repeat:repeat"/>
+
+<div class="row">
+<div class="col-sm-9">
+&copy; 2018 - iTrans. All rights reserved.
+</div>
+<div class="col-sm-3">
+<img src="images/logo2.png"/>
+</div>
+</div>
+
+</div>
+</div>
+
+
+
+
+<script>
+
+   function validatephonecustomer(){
+	   $(document).ready(function(e) {
+	   var phonenumber=$("#customerphone").val();
+	   var phoneformat = /^\(?([0-9]{3})\)?[-. ]?([0-9]{3})[-. ]?([0-9]{4})$/;	  	
+	  var Safaricom =/^(?:254|\+254|0)?(7(?:(?:[129][0-9])|(?:0[0-8])|(4[0-1]))[0-9]{6})$/;
+
+  if(phonenumber.match(Safaricom)|| phonenumber.match(phoneformat))
+        {
+			$("#customerphone").css("border-color", "green");
+			$(".confirmation").html("&#10003;").css("color","green").css("margin-left","100px"); 
+     		 return true;
+        }
+      else
+        {
+		$("#customerphone").css("border-color", "#f00");      
+		$(".confirmation").html(" invalid format").css("color","#f00"); 
+        return false;
+        }
+		
+		});
+	}
+   function validatephonecompany(){
+	   $(document).ready(function(e) {
+	   var phonenumber=$("#companyphone").val();
+	   var phoneformat = /^\(?([0-9]{3})\)?[-. ]?([0-9]{3})[-. ]?([0-9]{4})$/;	  	
+	  var Safaricom =/^(?:254|\+254|0)?(7(?:(?:[129][0-9])|(?:0[0-8])|(4[0-1]))[0-9]{6})$/;
+
+  if(phonenumber.match(Safaricom)|| phonenumber.match(phoneformat))
+        {
+			$("#companyphone").css("border-color", "green");
+			$(".confirmation").html("&#10003;").css("color","green").css("margin-left","100px"); 
+     		 return true;
+        }
+      else
+        {
+		$("#companyphone").css("border-color", "#f00");      
+		$(".confirmation").html(" invalid format").css("color","#f00"); 
+        return false;
+        }
+		
+		});
+	}
+</script>
+</body>
+</html>

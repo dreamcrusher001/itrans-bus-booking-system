@@ -1,0 +1,38 @@
+#ticket>.container
+{
+	border:double 10px #000;
+	height:100%;
+	margin-bottom:50px;
+	background-color:#FFF;
+}
+#ticket
+{
+	height:800px;
+}
+.borderright
+{
+	border-right:double  #000;
+	height:100%;
+}
+.borderleft
+{
+	border-left:double  #000;
+	
+}
+
+.busticket{height:790px;}
+.borderbottom
+{
+	border-bottom:double  #000;
+	
+}
+.busticket>h6
+{
+	transform:rotate(-90deg);
+	font-weight:bold;
+	margin-top:400px;
+	max-width:100px;
+	text-wrap:unrestricted;
+	word-break:loose
+}
+.texttocenter{padding-left:30%}

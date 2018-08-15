@@ -1,0 +1,23 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Untitled Document</title>
+<script src="alertify.min.js"></script>
+<link rel="stylesheet" href="alertify.min.css"/>
+<link rel="stylesheet" href="default.min.css"/>
+</head>
+
+<body>
+<input type="button" value="pop" onClick="pop()"/>
+
+<script>
+function pop(){
+	alertify.confirm("Are you sure").set('onok',
+	function(){
+		alertify.success('Ok');
+	});
+}
+</script>
+</body>
+</html>
